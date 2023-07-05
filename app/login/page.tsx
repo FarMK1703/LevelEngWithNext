@@ -1,6 +1,6 @@
 "use client";
 
-import React, { HtmlHTMLAttributes, MouseEventHandler, useState } from "react";
+import React, {useState} from "react";
 
 export interface userInputs {
     login: string;
@@ -8,7 +8,8 @@ export interface userInputs {
     isValidated: boolean;
 }
 
-export default function page() {
+export default function Login() {
+
     const [userInputs, setUserInputs] = useState<userInputs>({
         login: "",
         password: "",

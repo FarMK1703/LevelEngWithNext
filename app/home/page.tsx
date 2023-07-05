@@ -1,7 +1,7 @@
 import React from "react";
 import AdvList from "./components/AdvList";
 
-export default function page() {
+export default function Home() {
 
 
     return (

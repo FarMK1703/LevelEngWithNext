@@ -5,12 +5,12 @@ import { NavMenuLink } from '../interfaces';
 import Link from "next/link";
 
 export default function NavLinks({links}:{links:NavMenuLink[]}) {
-
+   const pathname=usePathname()
     
    return (
    <>
     {links.map((item, index) => {
-        const pathname=usePathname()
+      
         const isActive=pathname.startsWith(item.href)
         return (
             <Link
